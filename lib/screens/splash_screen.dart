@@ -17,18 +17,26 @@ class SplashScreen extends StatelessWidget {
         
             //image
         
-            Center(
+            Padding(
+              padding: const EdgeInsets.fromLTRB(36.0,0,0,0),
               child: SizedBox( height: 200, width: 200,
                 child: Image.asset("assets/coffee-latte.png")),
             ),
 
         
             //app name
-            const Text("Welcome to Brew Buddy!", style: 
-            TextStyle( fontSize: 20, fontWeight: FontWeight.w900, color: Colors.brown),),
+            const Text("Brew Buddy", style: TextStyle(color: Colors.grey, fontSize: 16, fontWeight: FontWeight.bold),),
 
             //some space
-            const SizedBox(height: 20,),
+            const SizedBox(height: 10,),
+
+
+            //subtitle
+            const Text("Lets have a coffee", style: 
+            TextStyle( fontSize: 18, fontWeight: FontWeight.w600, color: Colors.brown),),
+
+            //some space
+            const SizedBox(height: 10,),
         
             //next button
             GestureDetector(
